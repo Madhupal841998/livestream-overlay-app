@@ -1,0 +1,88 @@
+API Documentation
+
+This documentation outlines how to interact with the backend API of the Livestream Overlay Application. The API allows users to create, read, update, and delete (CRUD) overlays for a video stream, as well as manage RTSP stream URLs.
+
+Base URL
+
+The API is hosted locally on http://localhost:5000/.
+
+Endpoints
+
+1. Create Overlay
+
+Endpoint: /api/overlay  
+Method: POST  
+Description: This endpoint allows you to create a new overlay (text or image) on the livestream.
+
+Request Body Example:
+json
+{
+"content": "Your text overlay here",
+"position": "top-left", // Options: top-left, top-right, bottom-left, bottom-right
+"size": "medium", // Options: small, medium, large
+"type": "text" // Options: text or logo
+}
+
+Response:
+json
+{
+"message": "Overlay created successfully!"
+}
+
+2. Get All Overlays
+
+Endpoint: /api/overlays  
+Method: GET  
+Description: Fetches all the overlays that are currently stored.
+
+Response Example:
+json
+[
+{
+"_id": "64a7f1e7f0fc",
+"content": "Sample Overlay Text",
+"position": "top-left",
+"size": "medium",
+"type": "text"
+}
+]
+
+3. Update Overlay
+
+Endpoint: /api/overlay/:overlay_id  
+Method: PUT  
+Description: Updates an existing overlay based on its unique ID.
+
+Request Body Example:
+json
+{
+"content": "Updated Text Overlay",
+"position": "bottom-right",
+"size": "large",
+"type": "text"
+}
+
+Response:
+json
+{
+"message": "Overlay updated successfully!",
+"overlay": { / updated overlay details / }
+}
+
+4. Delete Overlay
+
+Endpoint: /api/overlay/:overlay_id  
+Method: DELETE  
+Description: Deletes a specific overlay by its unique ID.
+
+Response:
+json
+{
+"message": "Overlay deleted successfully!"
+}
+
+5. Stream Video
+
+Endpoint: /stream?url=RTSP_URL  
+Method: GET  
+Description: Streams video from an RTSP source. Pass the RTSP URL as a query parameter.

@@ -1,0 +1,69 @@
+User Documentation
+
+This section explains how to set up and use the Livestream Overlay Application, including managing overlays and configuring the RTSP URL for the video stream.
+
+Getting Started
+
+1. Clone the Repository:
+   git clone <your-repo-url>
+   cd livestream-overlay-app
+
+2. Install Dependencies:
+
+For the frontend:
+     npm install
+For the backend (Flask):
+     pip install -r requirements.txt
+
+3. Start the Backend:
+   Navigate to the folder where app.py is located and start the Flask server:
+
+   python app.py
+
+4. Start the Frontend:
+
+   npm start
+
+How to Input RTSP URL
+
+1. Open the web application in your browser at http://localhost:3000/.
+2. In the "RTSP URL" field, input the RTSP URL of your stream source (e.g., a camera feed):
+
+   rtsp://your.camera.ip/stream
+
+3. Click "Load Stream" to start viewing the stream.
+
+Managing Overlays
+
+1. Add an Overlay:
+
+   - Click the "Add Overlay" button.
+   - Choose the type of overlay (Text or Logo).
+   - Input the content or upload a logo image.
+   - Select the position (top-left, top-right, etc.), size (small, medium, large), and type (text or logo).
+   - Click "Add" to apply the overlay to the stream.
+
+2. Edit an Overlay:
+
+   - In the overlay list, find the overlay you want to modify and click "Edit."
+   - Make your changes in the popup modal and click "Save" to update the overlay.
+
+3. Delete an Overlay:
+   - In the overlay list, click "Delete" next to the overlay you wish to remove.
+   - Confirm the deletion in the modal popup.
+
+Customizing Overlay Appearance
+
+- Positions: You can position overlays at the top-left, top-right, bottom-left, or bottom-right corners of the stream.
+- Sizes: Overlays can be small, medium, or large.
+- Types:
+  - Text: Add a textual overlay (e.g., event names, timestamps, etc.).
+  - Logo: Upload a logo image to display on the stream.
+
+Technical Details
+
+- The backend uses Python and Flask for managing the API and video stream processing.
+- MongoDB is used for storing overlay information.
+- OpenCV is utilized for handling RTSP streams.
+
+

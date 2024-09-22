@@ -1,0 +1,253 @@
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.livestream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+
+}
+
+.video-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.video-controls button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.video-controls input[type="range"] {
+  width: 150px;
+}
+
+.overlay-modal,
+.delete-confirm-modal {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.overlay-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.overlay-table th,
+.overlay-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.add-overlay-button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.rtsp-controls input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.rtsp-controls button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.video-stream {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.overlay img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.overlay-controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.overlay-controls input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.overlay-controls button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay-controls button:hover {
+  background-color: #0056b3;
+}
+
+.rtsp-controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.rtsp-controls input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.rtsp-controls button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.rtsp-controls button:hover {
+  background-color: #218838;
+}
+
+.overlay-table {
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.overlay-table th,
+.overlay-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.overlay-table th {
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 5px;
+  background-color: #007bff;
+  color: rgb(228, 156, 156);
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Modal for overlay editing and adding */
+.overlay-modal {
+  position: relative;
+  top: 30%;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  font-size: medium;
+  margin: 5px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: medium;
+  outline: none;
+}
+
+.confirm-modal {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  background-color: antiquewhite;
+  position: relative;
+  top: 30%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Other styles */
+.overlay-table {
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.overlay-table th,
+.overlay-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.overlay-table th {
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 5px;
+  background-color: #007bff;
+  color: rgb(241, 169, 169);
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

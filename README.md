@@ -67,7 +67,7 @@ The **Livestream Overlay Application** is a full-stack web application that allo
 4. **Delete Overlay**: `DELETE /api/overlay/:overlay_id`
 5. **Stream Video**: `GET /stream?url=RTSP_URL`
 
-Check the [API Documentation](API Documentation) for more details.
+Check the [API Documentation](API Documentation.docx) for more details.
 
 ---
 

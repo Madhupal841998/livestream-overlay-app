@@ -29,7 +29,7 @@ The **Livestream Overlay Application** is a full-stack web application that allo
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/livestream-overlay-app.git
+    git clone https://github.com/Madhupal841998/livestream-overlay-app.git
     cd livestream-overlay-app
     ```
 
@@ -67,7 +67,7 @@ The **Livestream Overlay Application** is a full-stack web application that allo
 4. **Delete Overlay**: `DELETE /api/overlay/:overlay_id`
 5. **Stream Video**: `GET /stream?url=RTSP_URL`
 
-Check the [API Documentation](docs/API.md) for more details.
+Check the [API Documentation](/API Documentation.docx) for more details.
 
 ---
 
